@@ -26,7 +26,10 @@ export default function App() {
   }
 
   function handleClearing() {
-    setItem([]);
+    let confirmed = window.confirm(
+      "Are You Sure , You Want To Clear The List ?"
+    );
+    if (confirmed) setItem([]);
   }
 
   return (
